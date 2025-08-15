@@ -1,14 +1,6 @@
 # Projeto To-Do List (Full-Stack)
 
 Este repositório contém o código completo para uma aplicação de lista de tarefas, incluindo o back-end (API) desenvolvido com FastAPI e o front-end desenvolvido com HTML, CSS e JavaScript puros.
-
-## Visão Geral da Arquitetura
-
-O projeto é dividido em duas partes principais:
-
-1.  **`api_todolist_simples/`**: Contém a API RESTful construída com Python e FastAPI. É responsável por toda a lógica de negócios, interações com o banco de dados e por servir os dados.
-2.  **`frontend_todolist/`**: Contém a interface do usuário construída com tecnologias web padrão. É responsável pela apresentação dos dados e pela interação com o usuário, consumindo a API do back-end.
-
 ---
 
 ## Tecnologias Utilizadas
@@ -23,9 +15,7 @@ O projeto é dividido em duas partes principais:
 ### Front-end (UI)
 * HTML5
 * CSS3
-* JavaScript (ES6+)
-* Fetch API
-
+* JavaScript 
 ---
 
 ## Como Rodar o Projeto Completo
@@ -98,12 +88,12 @@ Para executar a aplicação, você precisará iniciar o servidor do back-end e o
 
 A API fornece os seguintes endpoints:
 
-| Método | URL                  | Descrição                                  |
-|--------|----------------------|--------------------------------------------|
-| `POST` | `/tarefas/`          | Cria uma nova tarefa.                      |
-| `GET`  | `/tarefas/`          | Lista todas as tarefas existentes.         |
-| `GET`  | `/tarefas/{id}`      | Obtém os detalhes de uma única tarefa.     |
-| `PUT`  | `/tarefas/{id}`      | Atualiza uma tarefa existente.             |
-| `DELETE`| `/tarefas/{id}`     | Deleta uma tarefa.                         |
+| Método   | Descrição                                  |
+|----------|--------------------------------------------|
+| `POST`   | Cria uma nova tarefa.                      |
+| `GET`    | Lista todas as tarefas existentes.         |
+| `GET`    | Obtém os detalhes de uma única tarefa{id}. |
+| `PUT`    | Atualiza uma tarefa existente.{id}         |
+| `DELETE` | Deleta uma tarefa.{id}                     |
 
 A documentação interativa completa da API (Swagger UI) pode ser acessada em `http://127.0.0.1:8000/docs` enquanto o servidor do back-end estiver rodando.
